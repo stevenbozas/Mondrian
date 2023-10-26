@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .grid{
+      width: 748px;
+      display: grid;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      gap: 9px;
+      background-color: #000000;
+    }
+
+    .cell{
+      background-color:white;
+    }
+
+    .gray1{
+      grid-column: span 3;
+
+    }
+    .gray2{
+      grid-row: span 2;
+
+    }
+
+    .gray3{
+      grid-row:span 2;
+      grid-column: span 2;
+   }
+    .gray4{
+      grid-row:span ;
+      grid-column: span ;
+
+    }
+
+    .red{background-color: #E72F24;}
+    .blue{background-color: #004592}
+    .yellow{background-color: #F9D01E;}
+    .black{background-color: #232629;}
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+<div class="grid">
+
+  <div class="cell red"></div>
+  <div class="cell gray1"></div>
+
+  
+  <div class="cell gray2"></div>
+  <div class="cell gray3"></div>
+  <div class="cell blue"></div>  
+  <div class="cell gray4"></div>
+
+  <div class="cell gray5 "></div>
+  <div class="cell yellow"></div>
+  <div class="cell black"></div>
+  <div class="cell gray6 "></div>
+
+
+</div>
+
+</body>
+
+</html>
